@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- This file has been downloaded from Bootsnipp.com. Enjoy! -->
+    <title>GILIE_APP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        .hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 5;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 70%;
+    padding-top: 20pt;
+    padding-left: 40pt;
+}
+
+.col-sm-3 a {
+    border: 1px solid transparent;
+    border-radius: 0;
+    transition: all 3s ease;
+}
+
+.col-sm-3 a:hover {
+    border: 1px solid #ff4647;
+    border-radius: 100% 60% / 30% 10%;
+    background: linear-gradient(rgba(56,123,131,0.7),rgba(56,123,131,0.7));
+}
+    </style>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div id="main_area">
+        <!-- Slider -->
+        <div class="row">
+            <div class="col-sm-6" id="slider-thumbs">
+                <!-- Bottom switcher of slider -->
+                <ul class="hide-bullets">
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-0">
+                            <img src="1.jpg">
+                        </a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-1"><img src="2.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-2"><img src="3.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-3"><img src="4.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-4"><img src="5.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-5"><img src="6.jpg"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-6"><img src="7.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-7"><img src="8.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-8"><img src="9.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-9"><img src="10.jpg"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-10"><img src="11.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-11"><img src="12.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-12"><img src="13.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-13"><img src="14.jpg"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-14"><img src="15.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-15"><img src="16.jpg"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-16"><img src="17.jpg"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-17"><img src="18.jpg"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-18"><img src="19.jpg"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-19"><img src="20.jpg"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-20"><img src="21.jpg"></a>
+                    </li>
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-21"><img src="22.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-22"><img src="23.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-23"><img src="25.jpg"></a>
+                    </li>
+
+                    <li class="col-sm-3">
+                        <a class="thumbnail" id="carousel-selector-24"><img src="26.jpg"></a>
+                    </li>
+                   
+             <br><br>    
+            </div>
+            <div class="col-sm-6">
+                <div class="col-xs-12" id="slider">
+                    <!-- Top part of the slider -->
+                    <div class="row">
+                        <div class="col-sm-12" id="carousel-bounding-box">
+                            <div class="" id="myCarousel" >
+                                <!-- Carousel items -->
+                                <div class="carousel-inner">
+                                    <div class="active item" data-slide-number="26">
+                                        <img src="1.jpg"></div>
+
+                                    <div class="item" data-slide-number="1">
+                                        <img src="2.jpg"></div>
+
+                                    <div class="item" data-slide-number="2">
+                                        <img src="3.jpg"></div>
+                                    
+                                    <div class="item" data-slide-number="2">
+                                        <img src="4.jpg"></div>
+
+                                    <div class="item" data-slide-number="2">
+                                            <img src="5.jpg"></div>
+
+                                    <div class="item" data-slide-number="2">
+                                            <img src="6.jpg"></div>
+
+                                     <div class="item" data-slide-number="2">
+                                             <img src="7.jpg"></div>
+                                    
+                                    <div class="item" data-slide-number="2">
+                                        <img src="8.jpg"></div>
+                                    
+                                        <div class="item" data-slide-number="1">
+                                            <img src="9.jpg"></div>
+    
+                                        <div class="item" data-slide-number="2">
+                                            <img src="10.jpg"></div>
+                                        
+                                        <div class="item" data-slide-number="2">
+                                            <img src="11.jpg"></div>
+    
+                                        <div class="item" data-slide-number="2">
+                                                <img src="12.jpg"></div>
+    
+                                        <div class="item" data-slide-number="2">
+                                                <img src="13.jpg"></div>
+    
+                                         <div class="item" data-slide-number="2">
+                                                 <img src="14.jpg"></div>
+                                        
+                                        <div class="item" data-slide-number="2">
+                                            <img src="15.jpg"></div>
+                                
+                                            <div class="item" data-slide-number="1">
+                                                <img src="16.jpg"></div>
+        
+                                            <div class="item" data-slide-number="2">
+                                                <img src="17.jpg"></div>
+                                            
+                                            <div class="item" data-slide-number="2">
+                                                <img src="18.jpg"></div>
+        
+                                            <div class="item" data-slide-number="2">
+                                                    <img src="19.jpg"></div>
+        
+                                            <div class="item" data-slide-number="2">
+                                                    <img src="20.jpg"></div>
+        
+                                             <div class="item" data-slide-number="2">
+                                                     <img src="21.jpg"></div>
+                                            
+                                            <div class="item" data-slide-number="2">
+                                                <img src="22.jpg"></div>
+                                                
+                                            <div class="item" data-slide-number="1">
+                                                    <img src="23.jpg"></div>
+                
+                                             <div class="item" data-slide-number="2">
+                                                     <img src="25.jpg"></div>
+                                            
+                                            <div class="item" data-slide-number="2">
+                                                <img src="26.jpg"></div>
+                                </div>
+                                <!-- Carousel nav -->
+                                <!--<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/Slider-->
+        </div>
+
+    </div>
+</div>
+<script type="text/javascript">
+  jQuery(document).ready(function($) {
+ 
+        $('#myCarousel').carousel({
+                interval: false
+        });
+ 
+        //Handles the carousel thumbnails
+        $('[id^=carousel-selector-]').click(function () {
+        var id_selector = $(this).attr("id");
+        try {
+            var id = /-(\d+)$/.exec(id_selector)[1];
+            console.log(id_selector, id);
+            jQuery('#myCarousel').carousel(parseInt(id));
+        } catch (e) {
+            console.log('Regex failed!', e);
+        }
+    });
+        // When the carousel slides, auto update the text
+        $('#myCarousel').on('slid.bs.carousel', function (e) {
+                 var id = $('.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-'+id).html());
+        });
+});
+</script>
+</body>
+</html>
